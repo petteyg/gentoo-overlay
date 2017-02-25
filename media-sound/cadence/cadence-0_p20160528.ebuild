@@ -9,9 +9,11 @@ inherit git-r3 python-r1
 
 DESCRIPTION=""
 HOMEPAGE="https://github.com/falkTX/cadence"
+KEYWORDS="~x86 ~amd64"
 SRC_URI=""
 EGIT_BRANCH="master"
 EGIT_REPO_URI="https://github.com/falkTX/cadence.git"
+EGIT_COMMIT="785f2f3"
 IUSE="midi +pulseaudio"
 
 LICENSE="GPL-2"
