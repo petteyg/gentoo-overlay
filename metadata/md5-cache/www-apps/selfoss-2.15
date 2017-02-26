@@ -1,0 +1,13 @@
+DEFINED_PHASES=install postinst prerm setup
+DEPEND=|| ( virtual/httpd-cgi virtual/httpd-fastcgi ) >=app-admin/webapp-config-1.50.15
+DESCRIPTION=Selfoss is an RSS reader/aggregator
+EAPI=6
+HOMEPAGE=https://selfoss.aditu.de/
+IUSE=vhosts vhosts
+KEYWORDS=~amd64 ~arm ~hppa ~ppc ~ppc64 ~sparc ~x86
+LICENSE=GPL-3
+RDEPEND=virtual/httpd-php || ( dev-lang/php[mysql] dev-lang/php[mysqli] dev-lang/php[postgres] dev-lang/php[sqlite] ) >=app-admin/webapp-config-1.50.15
+SLOT=2.15
+SRC_URI=https://github.com/SSilence/selfoss/releases/download/2.15/selfoss-2.15.zip
+_eclasses_=webapp	42c6ef7af496b228f9854b3c81e4b226
+_md5_=10274d5cfca0ddeb88ffdb1beab22591
