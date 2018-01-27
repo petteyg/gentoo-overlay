@@ -14,6 +14,7 @@ SLOT="0"
 
 RDEPEND=">=dev-qt/qtcore-5.6
 	>=dev-qt/qtnetwork-5.6
+	dev-libs/grantlee
 	dev-libs/jemalloc
 	uwsgi? ( www-servers/uwsgi )
 	docs? ( app-doc/doxygen )"
