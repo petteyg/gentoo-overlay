@@ -1,0 +1,11 @@
+# This file is deprecated as per GLEP 56 in favor of metadata.xml. Please add
+# your descriptions to your package's metadata.xml ONLY.
+# * generated automatically using egencache *
+
+dev-util/scanmem:gui - Enable the GameConqueror GUI
+sys-fs/udisks:cryptsetup - Enable sys-fs/cryptsetup support
+sys-fs/udisks:elogind - Use sys-auth/elogind for session tracking
+sys-fs/udisks:gptfdisk - Pull in sys-apps/gptfdisk for sgdisk command as used by partitioning functionality
+sys-fs/udisks:lvm - Add support for Logical Volume Management via sys-fs/lvm2.
+sys-fs/udisks:remote-access - Control whether connections from other clients over LAN are allowed
+sys-fs/udisks:systemd - Support sys-apps/systemd's logind
