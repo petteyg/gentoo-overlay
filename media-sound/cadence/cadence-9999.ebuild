@@ -15,7 +15,7 @@ SLOT="0"
 
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 RDEPEND="${PYTHON_DEPS}
-	dev-python/PyQt4[${PYTHON_USEDEP}]
+	dev-python/PyQt5[${PYTHON_USEDEP}]
 	midi? ( media-sound/a2jmidid )
 	media-sound/jack2
 	pulseaudio? ( media-sound/pulseaudio[jack] )"
