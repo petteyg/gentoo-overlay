@@ -15,7 +15,7 @@ fi
 inherit distutils-r1
 
 DESCRIPTION="Let's encrypt plugin to use DNS-01 authentication via net-dns/pdns"
-HOMEPAGE="https://github.com/certbot/certbot https://letsencrypt.org/"
+HOMEPAGE="https://github.com/certbot/certbot"
 
 LICENSE="Apache-2.0"
 SLOT="0"
@@ -32,11 +32,7 @@ distutils_enable_tests pytest
 
 src_prepare() {
 	default
-	sed -i -e 's|etc/lets|/etc/lets|' setup.py
-}
-
-python_prepare_all() {
-	# required as deps of deps can trigger this too...
-	echo '    ignore:.*collections\.abc:DeprecationWarning' >> ../pytest.ini
-	distutils-r1_python_prepare_all
+	# Fix installing configuration into /usr/etc
+	# Remove if https://github.com/robin-thoni/certbot-pdns/pull/11 is merged
+	sed -i -e 's|etc/lets|/etc/lets|' setup.py || die
 }
