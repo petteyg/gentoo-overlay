@@ -6,7 +6,6 @@ inherit meson python-r1 udev
 
 DESCRIPTION="GTK configuration application for libratbag"
 HOMEPAGE="https://github.com/libratbag/piper"
-RESTRICT="nomirror"
 SRC_URI="https://github.com/libratbag/piper/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
@@ -21,10 +20,8 @@ DEPEND="
 	doc? ( app-doc/doxygen )
 	dev-libs/libratbag
 	dev-python/python-evdev[${PYTHON_USEDEP}]
-	dev-python/pygtk
+	dev-python/pygobject[${PYTHON_USEDEP}]
 "
-#	dev-lang/swig
-#	test? ( dev-util/valgrind )
 
 RDEPEND="
 	dev-libs/libevdev
