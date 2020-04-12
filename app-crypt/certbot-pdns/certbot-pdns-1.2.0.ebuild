@@ -14,6 +14,7 @@ fi
 
 inherit distutils-r1
 
+KEYWORDS="~amd64"
 DESCRIPTION="Let's encrypt plugin to use DNS-01 authentication via net-dns/pdns"
 HOMEPAGE="https://github.com/certbot/certbot"
 
