@@ -1,12 +1,11 @@
 EAPI=7
 
-PYTHON_COMPAT=( python3_{5,6,7} )
+PYTHON_COMPAT=( python3_{6,7} )
 
 inherit meson python-r1 udev
 
 DESCRIPTION="Library to configure gaming mice"
 HOMEPAGE="https://github.com/libratbag/libratbag"
-RESTRICT="nomirror"
 SRC_URI="https://github.com/libratbag/libratbag/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
