@@ -1,5 +1,5 @@
-DEFINED_PHASES=unpack
-DEPEND=net-print/cups >=app-arch/rpm2targz-9.0.0.3g
+DEFINED_PHASES=install unpack
+DEPEND=net-print/cups app-arch/rpm2targz
 DESCRIPTION=Brother printer driver for MFC-9560CDW
 EAPI=6
 HOMEPAGE=http://support.brother.com
@@ -8,6 +8,6 @@ LICENSE=brother-eula
 RDEPEND=net-print/cups
 RESTRICT=mirror strip
 SLOT=0
-SRC_URI=https://download.brother.com/welcome/dlf006791/mfc9560cdwcupswrapper-src-1.1.1-5.tar.gz
-_eclasses_=desktop	b1d22ac8bdd4679ab79c71aca235009d	epatch	a1bf4756dba418a7238f3be0cb010c54	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	6e6c2737b59a4b982de6fb3ecefd87f8	ltprune	2729691420b6deeda2a90b1f1183fb55	multilib	1d91b03d42ab6308b5f4f6b598ed110e	preserve-libs	ef207dc62baddfddfd39a164d9797648	rpm	f52cfa3a435468d86d3b49c357b9cb35	toolchain-funcs	a3a237ef6c0c58546bf23b2c382f9e56	vcs-clean	2a0f74a496fa2b1552c4f3398258b7bf
-_md5_=6b440ff6550a36d9c3f9ea5e5e30ff5c
+SRC_URI=http://download.brother.com/welcome/dlf006492/mfc9560cdwlpr-1.1.1-5.i386.rpm http://download.brother.com/welcome/dlf006494/mfc9560cdwcupswrapper-1.1.1-5.i386.rpm
+_eclasses_=desktop	c0d27bf73aa08ca05b663dbd31fbef28	edos2unix	33e347e171066657f91f8b0c72ec8773	epatch	9f813bb3c47cf2e60619a663b87c5f4e	estack	055c42df72f76a4f45ec92b35e83cd56	eutils	dab5d8ec471d025b79c9e6906bcf3bff	ltprune	4f3f2db5ce3ccbeeacdf3f94954043aa	multilib	4b66d835ec72e021e359bb81eacfe988	preserve-libs	dbc9f8d2d49c66467bc327fddd8317bd	rpm	f73e907469f65e52192f110dec72dce0	strip-linguas	ac3ee41ee2d31d8c41a77c0838320cc7	toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	vcs-clean	b690a7e9b6c497cf59326a7545df4283	wrapper	4251d4c84c25f59094fd557e0063a974
+_md5_=e1806453341b2cdcc72f1b8673f330c2
